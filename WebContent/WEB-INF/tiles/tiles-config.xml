@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="printJson" template="/WEB-INF/tiles/template.jsp">
+		<put-attribute name="page1" value="/WEB-INF/views/test.jsp"/>
+		<put-attribute name="page2" value="/WEB-INF/views/upload.jsp"/>
+	</definition>
+	
+	<definition name="tt" template="/WEB-INF/tiles/template.jsp">
+		<put-attribute name="page1" value="/WEB-INF/views/nav.jsp"/>
+		<put-attribute name="page2" value="/WEB-INF/views/welcome.jsp"/>
+	</definition>
+	
+	<definition name="elTiles" template="/WEB-INF/tiles/template.jsp">
+		<put-attribute name="page1" expression="${sessionScope.page1}"/>
+		<put-attribute name="page2" expression="${requestScope.page2}"/>
+	</definition>
+	<!-- 
+		el 로 insert 해야되는 페이지를 설정해서도 사용할수 있게 지원하는데 , expression 으로 설정
+		Scope를 지정하지 않는다면 모든 scope 를 다 search, 지정하면 해당 scope만 search , 지정하면 
+	 -->
+
+
+</tiles-definitions>
