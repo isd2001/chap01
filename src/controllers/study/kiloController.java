@@ -84,15 +84,7 @@ public class kiloController {
 				// attach[i].transferTo();
 				
 			}
-		}
-		
-		
-
-		
-		
-		
-
-		
+		}		
 	}
 	
 	

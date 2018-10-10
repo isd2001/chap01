@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <!DOCTYPE html>
 <html>
@@ -10,21 +10,19 @@
 </head>
 <body>
 	<div align="center">
-	<div style="width: 960px;">
-		<div>
-			<h1>Tiles Template™</h1>
-		</div>
-		<div>
-			<tiles:insertAttribute name="page1"/>
-		</div>
-		<div style="min-height: 70%;">
-			<tiles:insertAttribute name="page2"/>
-		</div>
-		
-		
+		<div style="width: 960px;">
+			<div>
+				<h1>Tiles Template™</h1>
+			</div>
+			<div>
+				<tiles:insertAttribute name="page1" />
+			</div>
+			<div style="min-height: 70%;">
+				<tiles:insertAttribute name="page2" />
+			</div>
 		</div>
 	</div>
-	
-	
+
+
 </body>
 </html>
