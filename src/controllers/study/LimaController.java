@@ -23,8 +23,6 @@ public class LimaController {
 	 *   Spring bean configuration 에서 viewResolver 처리부분에
 	 *    	TilesViewResolver 등록 -   
 	 *   	tiles library 가 필요함.
-	 *   
-	 *   
 	 */
 	@RequestMapping("/31.do")
 	public String study31Handle ( ) {

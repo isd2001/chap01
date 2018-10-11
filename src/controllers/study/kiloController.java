@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import models.AlertService;
+
 /*
  * Multipart 처리 (File upload)
  *  - Spring은 Multipart 요청도 처리하게 편하게 처리해서 요청처리 메서드에 Inject 해준다.
@@ -30,9 +32,13 @@ import org.springframework.web.multipart.MultipartFile;
 public class kiloController {
 	@Autowired
 	ServletContext ctx;
-		
+	@Autowired
+	AlertService service;
+	
 	@RequestMapping("/26.do")
 	public String study26Handle() {
+		String json="{\"mode\":\"upload\"}";
+		service.sendAll(json);
 		return "upload";
 	}
 	
