@@ -17,6 +17,8 @@
 	<!-- HandlerMapping configuration : 등록할수 있는 HandlerMapping용 빈들은 여러가지가 있지만, 
 		Spring3 버전대부터는 거의 RequestMappingHanlderMapping 빈을 이용해서 처리한다. 이 방식으로 연동되게 
 		하는 컨트롤러가 Spring의 DI 기능을 활용할수 있기 때문에. -->
+		
+	<context:component-scan base-package="app" />
 	<bean id="handlerMapping"
 		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
 	<!-- controller registration -->
